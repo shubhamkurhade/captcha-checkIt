@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #708090;
+}
+.wrapper{
+    width: 500px;
+    background: white;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+header{
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-start;
+    padding: 10px 10px 10px;
+}
+hr{
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+header h1{
+    font-size: 2rem;
+    padding-left: 10px;
+}
+.wrapper .captcha-area{
+    display: flex;
+    height: 75px;
+    align-items: center;
+    padding: 10px;
+    justify-content: space-between;
+}
+.captcha-area .captcha-img{
+    height: 100%;
+    width: 350px;
+    position: relative;
+    background: #000;
+    border-radius: 5px;
+    user-select: none;
+}
+.captcha-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.captcha-img .captcha{
+    position: absolute;
+    left: 58%;
+    top: 45%;
+    width: 100%;
+    color: #fff;
+    align-items: center;
+    font-size: 35px;
+    letter-spacing: 10px;
+    transform: translate(-40%, -40%);
+    text-shadow: 0 0 2px #a9a9a9;
+    font-family: 'Noto Sans', sans-serif;
+
+}
+.wrapper button{
+    border: none;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+    background: slateblue;
+    border-radius: 5px;
+}
+.captcha-area .reload-btn{
+    width: 75px;
+    height: 100%;
+    font-size: 25px;
+}
+.captcha-area .reload-btn i{
+    transition: transform 0.3s ease;
+}
+.captcha-area .reload-btn:hover i{
+    transform: rotate(30deg);
+}
+.wrapper .input-area{
+    height: 50px;
+    width: 100%;
+    position: relative;
+}
+.input-area input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    font-size: 25px;
+    padding-left: 20px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+.input-area input:is(:focus, :valid){
+ border: 2px solid slateblue;  
+ padding: 10px; 
+}
+.input-area .check-btn{
+    position: absolute;
+    right: 7px;
+    top: 50%;
+    font-size: 20px;
+    height: 45px;
+    padding: 0 20px;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-50%);
+}
+.input-area input:valid + .check-btn{
+    opacity: 1;
+    pointer-events: auto;
+}
+.wrapper .status-text{
+    display: none;
+    font-size: 18px;
+    color: red;
+    text-align: center;
+    margin: 20px 0 -5px 0;
+    padding-bottom: 10px;
+}
+/* The snackbar - position it at the bottom and in the middle of the screen */
+#snackbar {
+    visibility: hidden; /* Hidden by default. Visible on click */
+    min-width: 250px; /* Set a default minimum width */
+    margin-left: -125px; /* Divide value of min-width by 2 */
+    background-color: #333; /* Black background color */
+    color: #fff; /* White text color */
+    text-align: center; /* Centered text */
+    border-radius: 2px; /* Rounded borders */
+    padding: 16px; /* Padding */
+    position: fixed; /* Sit on top of the screen */
+    z-index: 1; /* Add a z-index if needed */
+    left: 50%; /* Center the snackbar */
+    bottom: 30px; /* 30px from the bottom */
+  }
+  
+  /* Show the snackbar when clicking on a button (class added with JavaScript) */
+  #snackbar.show {
+    visibility: visible; /* Show the snackbar */
+    /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
+    However, delay the fade out process for 2.5 seconds */
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  }
+  
+  /* Animations to fade the snackbar in and out */
+  @-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+  }
+  
+  @keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+  }
+  
+  @-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+  }
+  
+  @keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+  }
+  .footer-txt{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    background-color: #fff;
+    color: black;
+    text-align: center;
+  }

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Captcha check</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4480b7fb58.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <i class="em em-robot_face" aria-role="presentation" aria-label="ROBOT FACE"></i>
+            <h1>Captch check</h1>
+        </header>
+        <hr>
+        <div class="info-captch">
+            <p>A “CAPTCHA” is a turing test to tell human and bots apart. 
+                <br>It is easy for humans to solve, but hard for “bots” and other malicious software to figure out. 
+                <br> By adding reCAPTCHA to a site, you can block automated software while helping your welcome users to enter with ease.</p>
+        </div>
+        <div class="captcha-area">
+            <div class="captcha-img">
+                <img src="./icons/banner-header-graph-paper-squared-paper.jpg" alt="">
+                <span class="captcha"></span>
+            </div>
+            <button class="reload-btn"><i class="fa-solid fa-rotate-right"></i></button>
+        </div>
+        <form action="#" class="input-area">
+            <input type="text" placeholder="Enter the Captcha" required>
+            <button class="check-btn">Check</button>
+        </form>
+        <div class="status-text">Captcha Not Matched, Please try again!</div>
+        <div id="snackbar">Password Copied to Clipboard!</div>
+    </div>
+    <div class="footer-txt">
+        <footer>Made by: <a href="https://www.linkedin.com/in/shubham-kurhade-b06680268/">Shuhbam Kurhade</a></footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
