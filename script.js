@@ -46,7 +46,8 @@ checkBtn.addEventListener("click", e=>{
     let inputValue = inputField.value.split('').join(' '); // the input is split and space is added in btwn bcoz we have also added the space while generating the random captcha
     if(inputValue == captcha.innerText){
         //copyBtnSnackBar();
-        setTimeout(timeOutPrompt(), 3000);
+        timeOutPrompt()
+        location.reload();
     }else{
         StatusUpdate.style.display = "block";
         setTimeout(function(){StatusUpdate.style.display = "none";}, 2000);
