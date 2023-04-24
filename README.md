@@ -13,9 +13,10 @@ By adding reCAPTCHA to a site, you can block automated software while helping yo
 -------------------------------
 Some snapshots of the application: 
 
-![image](https://user-images.githubusercontent.com/86063069/233828237-a725c1c7-7c83-43fa-ae04-b58e8374123a.png)
-![image](https://user-images.githubusercontent.com/86063069/233828270-8ecb7f70-845b-4aa6-9dd9-986cfd4bc999.png)
-![image](https://user-images.githubusercontent.com/86063069/233828287-48ffe24f-e935-455e-b58f-d79586adbcda.png)
-![image](https://user-images.githubusercontent.com/86063069/233828311-593acf55-0a1e-4ebc-82aa-6417bcfabf69.png)
-![image](https://user-images.githubusercontent.com/86063069/233828344-d0ad99bb-9e4e-44a7-bf83-b13245cf441a.png)
+![image](https://user-images.githubusercontent.com/86063069/234074143-33d03229-904c-4b29-90e7-700309bdb752.png)
+![image](https://user-images.githubusercontent.com/86063069/234074307-befb5544-903a-4d94-9523-345a9bb87ebe.png)
+![image](https://user-images.githubusercontent.com/86063069/234074231-7af5f028-0cdc-47de-aed5-bee326da92fa.png)
+![image](https://user-images.githubusercontent.com/86063069/234074392-675b359d-9115-4c47-8ef6-24b61e81f686.png)
+
+
 
