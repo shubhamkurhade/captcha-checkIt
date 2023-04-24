@@ -18,6 +18,7 @@ function getCaptcha(){
         captcha.innerText += ` ${randomCaptcha}`; // in this backticks are used to add the space before captcha
         //console.log(randomCaptcha);
     }
+    inputField.value = "";
 }
 getCaptcha(); // calling the captch function
 
